@@ -15,7 +15,7 @@ public class Dealership {
         {
             if(car instanceof ElectricCar)
             {
-                if(((ElectricCar)car).getBatteryPercent() < 100)
+                if(((ElectricCar)car).getBatteryPercent() < 10)
                     System.out.println(car + "\nThis electric vehicle needs a charge.");
                 else
                     System.out.println(car + "\nThis electric vehicle does not need a charge.");
@@ -40,7 +40,7 @@ public class Dealership {
         {
             if(car instanceof ElectricCar)
             {
-                if(((ElectricCar)car).getBatteryPercent() < 100)
+                if(((ElectricCar)car).getBatteryPercent() < 10)
                     System.out.println(car + "\nThis electric vehicle needs a charge. " + ((ElectricCar)car).getBatteryPercent());
                 else
                     System.out.println(car + "\nThis electric vehicle does not need a charge." );
