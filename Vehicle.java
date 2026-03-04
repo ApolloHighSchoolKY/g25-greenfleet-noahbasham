@@ -27,6 +27,10 @@ public class Vehicle {
             mileage += distance;
     }
 
+    public boolean getEngineStatus(){
+        return engineRunning;
+    }
+
     public String toString() {
         // TODO: Return model, mileage, and status
         String output = "Model: " + model + "\nMileage: " + mileage + "\nStatus: ";

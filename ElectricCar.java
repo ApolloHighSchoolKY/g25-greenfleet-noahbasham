@@ -16,8 +16,15 @@ public class ElectricCar extends Vehicle {
         // TODO: Call super.drive() 
         // TODO: Calculate battery loss
         super.drive(distance);
-        batteryPercent -= (distance / 5);
 
+        if(getEngineStatus());
+        {    
+        
+            if(batteryPercent >= distance / 5)
+                batteryPercent -= (distance / 5);
+            else
+                batteryPercent = 0;
+        }
     }
 
     public double getBatteryPercent(){
