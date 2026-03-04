@@ -20,8 +20,8 @@ public class ElectricCar extends Vehicle {
         if(getEngineStatus());
         {    
         
-            if(batteryPercent >= distance / 5)
-                batteryPercent -= (distance / 5);
+            if(batteryPercent >= distance / 5.0)
+                batteryPercent -= (distance / 5.0);
             else
                 batteryPercent = 0;
         }
